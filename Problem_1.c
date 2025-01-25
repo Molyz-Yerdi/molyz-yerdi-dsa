@@ -1,9 +1,11 @@
 #include <stdio.h>
 
+
 int Number(int a)
 {
     return (1000 - 1) / a;
 }
+
 
 int SumN(int a)
 {
@@ -12,9 +14,10 @@ int SumN(int a)
     return S;
 }
 
-int main (void)
+
+int main(void)
 {
     int Sum = SumN(3) + SumN(5) - SumN(15);
-    printf("Sum of all the multiples of 3 or 5 below 1000 is %d\n", Sum);
+    printf("%d\n", Sum);
     return 0;
 }

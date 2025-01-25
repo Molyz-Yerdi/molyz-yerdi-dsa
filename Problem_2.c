@@ -43,15 +43,11 @@ int main(void)
     }
 
     int n = IndexFibo(fn);
-
     long long Sum = 0;
-
     for (int i = 3; i <= n; i = i + 3)
     {
         Sum+=Fibo(i);
     }
-
     printf("%lld\n", Sum);
-
     return 0;
 }
