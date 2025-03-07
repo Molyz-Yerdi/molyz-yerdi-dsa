@@ -1,9 +1,24 @@
-#include <stdio.h>
-
-int main(void)
+int lengthOfLastWord(char* s)
 {
-    char str[] = "Hello How are you";
+    int last_word = 0;
+    int i = 0;
+    
+    while (s[i] != '\0')
+    {
+        if (s[i] != ' ')
+        {
+            last_word = 0;
+            while (s[i] != '\0' && s[i] != ' ')
+            {
+                ++last_word;
+                ++i;
+            }
+        }
+        else
+        {
+            ++i;
+        }
+    }
 
-    printf("%ld\n", str.length);
-    return 0;
+    return last_word;
 }
